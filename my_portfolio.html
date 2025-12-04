@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Himanshu kr - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .page {
+      max-width: 900px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      padding: 40px 40px 32px;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #e5e7eb;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 28px;
+      color: #4b5563;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .header-info h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: #4b5563;
+      line-height: 1.5;
+      margin-top: 6px;
+    }
+
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 2px solid #111827;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #374151;
+      margin-bottom: 10px;
+    }
+
+    .summary-text {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.6;
+      max-width: 700px;
+    }
+
+    /* EDUCATION CARD */
+    .edu-card {
+      margin-top: 14px;
+      padding: 16px 20px;
+      border-radius: 16px;
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .edu-main {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .edu-degree {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .edu-inst {
+      font-size: 14px;
+      color: #4b5563;
+    }
+
+    .edu-year {
+      font-size: 13px;
+      font-weight: 500;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+
+    /* SKILLS */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .skill-pill {
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-weight: 500;
+    }
+
+    /* Empty section placeholder text (optional) */
+    .placeholder {
+      font-size: 13px;
+      color: #9ca3af;
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 640px) {
+      .page {
+        padding: 24px 18px 24px;
+        border-radius: 18px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-info h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="avatar">
+        <!-- Yahan apni photo ka link daal sakte ho -->
+        <img src="himanshu.jpeg" alt="Himanshu kr">
+        
+      </div>
+      <div class="header-info">
+        <h1>Himanshu kr</h1>
+        <div class="contact">
+          <div>himanshukumar955655@gmail.com</div>
+          <div>
+            <a href="https://linkedin.com/in/himanshu-kumar-724987395" target="_blank">
+              linkedin.com/in/himanshu-kumar-724987395
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section class="section">
+      <h2 class="section-title">SUMMARY</h2>
+      <p class="summary-text">
+        B.Tech (CSE) student at Lovely Professional University interested in AI/ML, currently
+        learning HTML, CSS, Java, and Python. Focused on building strong tech skills and developing
+        real-world projects.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <h2 class="section-title">EXPERIENCE</h2>
+      <p class="placeholder">Gained hands-on experience by attending HTML and Python programming classes and building small practice-based projects. Developed basic games and mini-applications to understand real-world coding logic. Actively improving problem-solving skills, syntax knowledge, and debugging techniques through daily practice.</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2 class="section-title">PROJECTS</h2>
+      <p class="placeholder">A command-based game where a user guesses a number and receives score updates based on attempts. Improved control flow, loops, and random module usage.
+        Created a multipage personal portfolio using HTML & CSS including summary, education, and contact sections; improved webpage structuring and styling.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title">EDUCATION</h2>
+      <div class="edu-card">
+        <div class="edu-main">
+          <div class="edu-degree">B.Tech (CSE)</div>
+          <div class="edu-inst">Lovely Professional University (LPU)</div>
+        </div>
+        <div class="edu-year">2025</div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <h2 class="section-title">SKILLS</h2>
+      <div class="skills-list">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">Python</span>
+        <span class="skill-pill">AI/ML (Beginner)</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
